@@ -105,7 +105,40 @@ p {
     color: var(--clr-primary);
     background: var(--clr-primary-light);
 }
-
+.content-divider {
+    height: 0.5rem;
+    background: linear-gradient(
+        to left,
+        var(--clr-brown-1),
+        var(--clr-primary-light),
+        var(--clr-brown-1)
+    );
+}
+.clearfix::after,
+.clearfix::before {
+    content: '';
+    clear: both;
+    display: table;
+}
+.section-title h3 {
+    color: var(--clr-primary);
+    text-transform: lowercase;
+}
+.section-title {
+    margin-bottom: 2rem;
+}
+.section-center {
+    padding: 4rem 0;
+    width: 85vw;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+    .section-center {
+        width: 95vw;
+        padding: 4rem 1rem;
+    }
+}
 /* Header */
 .header {
     min-width: 400px;
@@ -113,7 +146,7 @@ p {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url(../images/hero.jpg) center/cover no-repeat fixed;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .banner {
@@ -141,4 +174,82 @@ p {
     outline-offset: 0.25rem;
     font-size: 1.25rem;
     padding: 1rem 1.7rem;
+}
+
+/* skills */
+.skills {
+    background: var(--clr-primary-light);
+}
+
+.skill {
+    padding: 2.5rem 0;
+    min-height: 25rem;
+    text-align: center;
+    transition: var(--transistion);
+}
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+    transition: var(--transistion);
+    display: block;
+    color: var(--clr-primary);
+}
+.skill-text {
+    color: var(--clr-brown-5);
+    max-width: 20rem;
+    margin: 0 auto;
+}
+.skill:hover {
+    background: var(--clr-white);
+    box-shadow: 0 5px var(--clr-primary);
+}
+.skill:hover .skill-icon {
+    transform: translateY(-5px);
+    color: var(--clr-brown-1);
+}
+@media screen and (min-width: 576px) {
+    .skill {
+        float: left;
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1170px) {
+    .skill {
+        float: left;
+        width: 25%;
+    }
+}
+
+/* about */
+.about-img,
+.about-info {
+    padding: 2rem 0;
+}
+.about-img-container {
+    background: var(--clr-primary);
+    border: 0.5rem solid var(--clr-primary);
+    max-width: 30rem;
+    overflow: hidden;
+    border-radius: var(--radius);
+}
+.about-picture {
+    transition: var(--transistion);
+}
+.about-img-container:hover .about-picture {
+    opacity: 0.7;
+    transform: scale(1.1) rotate(2deg);
+}
+.about-text {
+    max-width: 26rem;
+    color: var(--clr-brown-5);
+}
+@media screen and (min-width: 768px) {
+    .about-img,
+    .about-info {
+        float: left;
+        width: 50%;
+    }
+    .about-info {
+        padding-left: 2rem;
+    }
 }
