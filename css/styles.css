@@ -213,6 +213,9 @@ p {
         width: 50%;
         padding: 2.5rem 1rem;
     }
+    .skill:hover {
+        box-shadow: none;
+    }
 }
 @media screen and (min-width: 1170px) {
     .skill {
@@ -283,6 +286,11 @@ p {
 .product-price {
     color: var(--clr-primary);
 }
+.product-btn:hover {
+    background: var(--clr-brown-1);
+    color: var(--clr-primary-light);
+    /* color: var(--clr-primary); */
+}
 
 @media screen and (min-width: 768px) {
     .product {
@@ -312,5 +320,91 @@ p {
     }
     .product {
         margin-bottom: 0;
+    }
+}
+
+/* services */
+.services {
+    background: var(--clr-white);
+}
+.services-title {
+    margin-bottom: 0;
+    text-align: center;
+}
+.service-card {
+    margin: 2rem 0;
+    background: var(--clr-alba);
+    border-radius: var(--radius);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: var(--transistion);
+}
+
+.service-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.service-img {
+    height: 17rem;
+    object-fit: cover;
+    border-top-right-radius: var(--radius);
+    border-top-left-radius: var(--radius);
+}
+.service-img-container {
+    position: relative;
+}
+.service-icon {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    z-index: 10;
+    font-size: 2rem;
+    color: var(--clr-primary);
+    padding: 0.25rem 0.6rem;
+    border-radius: 50%;
+    background: var(--clr-primary-light);
+    transform: translate(-50%, 50%);
+    border: 0.375rem solid var(--clr-alba);
+}
+.service-info {
+    text-align: center;
+    padding: 3rem 1rem 1.5rem;
+}
+.service-info p {
+    margin: 0 auto;
+    color: var(--clr-brown-5);
+}
+
+.service-btn {
+    border-radius: var(--radius);
+    font-size: 0.7rem;
+    text-transform: capitalize;
+    padding: 0.375 0.5rem;
+    font-weight: 400;
+    margin-top: 1.25rem;
+}
+.service-btn:hover {
+    background: var(--clr-brown-1);
+    color: var(--clr-primary-light);
+}
+
+@media screen and (min-width: 768px) {
+    .service-card {
+        float: left;
+        width: 45%;
+        margin-right: 5%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .service-info {
+        min-height: 10rem;
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .service-card {
+        width: 23%;
+        float: left;
+        margin-right: 2%;
     }
 }
