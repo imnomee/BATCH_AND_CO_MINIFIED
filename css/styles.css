@@ -331,6 +331,9 @@ p {
     margin-bottom: 0;
     text-align: center;
 }
+.services-title h2 {
+    margin-top: -0.5rem;
+}
 .service-card {
     margin: 2rem 0;
     background: var(--clr-alba);
@@ -406,5 +409,81 @@ p {
         width: 23%;
         float: left;
         margin-right: 2%;
+    }
+}
+
+/* contact us */
+.contact {
+    background: var(--clr-alba);
+}
+.contact-form,
+.contact-info {
+    margin: 1rem 0;
+}
+
+.contact-item {
+    margin-bottom: 1.75rem;
+}
+.contact-title {
+    font-weight: normal;
+    color: var(--clr-primary);
+}
+.contact-text {
+    text-transform: uppercase;
+}
+address a {
+    text-decoration: none;
+    color: var(--clr-brown-1);
+}
+.contact-form {
+    background: var(--clr-white);
+    border-radius: var(--radius);
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transistion);
+    max-width: 35rem;
+}
+.contact-form:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form h3 {
+    padding-top: 1.25rem;
+    color: var(--clr-brown-1);
+}
+.form-group {
+    padding: 1rem 1.5rem;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    margin-bottom: 1.25rem;
+    background: var(--clr-alba);
+    border-radius: var(--radius);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+}
+.form-control::placeholder {
+    font-family: var(--ff-primary);
+    color: var(--clr-brown-1);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+}
+
+.submit-btn {
+    width: 100%;
+    border-bottom-right-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    padding: 1rem;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 992px) {
+    .contact-form,
+    .contact-info {
+        float: left;
+        width: 50%;
     }
 }
