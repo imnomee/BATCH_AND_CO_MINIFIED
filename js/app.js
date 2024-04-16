@@ -15,3 +15,10 @@ navBtn.addEventListener('click', () => {
 navClose.addEventListener('click', () => {
     links.classList.remove('show-links');
 });
+
+const singleLinks = document.querySelectorAll('.nav-link');
+singleLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+        links.classList.remove('show-links');
+    });
+});
