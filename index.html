@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
         <meta
             name="description"
             content="Batch & Co SW2 & SW16 Is a zero landfill Specialty Coffee Shop. 
@@ -13,6 +15,7 @@ Dog Friendly
 We use local ethical products supporting other London small artisan businesses.
 Serving Caravan Roasters Craft Coffee" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Coffee | Batch & Co || Home</title>
         <link
             rel="shortcut icon"
             href="./images/favicon.jpg"
@@ -24,18 +27,50 @@ Serving Caravan Roasters Craft Coffee" />
             crossorigin="anonymous"
             referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./css/styles.css" />
-        <title>Coffee | Batch & Co || Home</title>
+        <link rel="canonical" href="https://www.batchandco.com" />
+        <meta property="og:title" content="Coffee | Batch &amp; Co | England" />
+        <meta
+            property="og:description"
+            content="Batch &amp; Co SW2 &amp; SW16 Is a zero landfill Specialty Coffee Shop. 
+We also serve artisan pastries &amp; cakes. 
+Simple lunch &amp; brunch.
+Bottomless Brunch
+Afternoon Tea
+Dog Friendly
+We use local ethical products supporting other London small artisan businesses.
+Serving Caravan Roasters Craft Coffee" />
+        <meta property="og:url" content="https://www.batchandco.com" />
     </head>
     <body>
         <!-- navbar -->
+        <span class="nav-btn" id="nav-toggle"
+            ><i class="fas fa-bars fa-fw"></i
+        ></span>
+        <nav class="navbar" id="navbar">
+            <div class="navbar-header">
+                <span class="nav-close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </span>
+            </div>
+            <ul class="nav-items">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="skills.html" class="nav-link">skills</a></li>
+                <li><a href="about.html" class="nav-link">about us</a></li>
+                <li><a href="products.html" class="nav-link">products</a></li>
+                <li>
+                    <a href="services.html" class="nav-link">services</a>
+                </li>
+                <li><a href="contact.html" class="nav-link">contact us</a></li>
+            </ul>
+        </nav>
         <!-- header -->
         <header class="header">
             <div class="banner">
                 <div class="logo">
                     <img src="./images/logo_transp.png" alt="logo" />
                 </div>
-                <h2>Over one hundred flavours of</h2>
-                <h1>ethically<br />sourced coffee</h1>
+                <h2>Exploring Exciting Coffee Trends Together</h2>
+                <h1>Coffee<br />Adventure Awaits</h1>
                 <a href="skill.html" class="btn banner-btn">explore</a>
             </div>
         </header>
@@ -402,9 +437,9 @@ Serving Caravan Roasters Craft Coffee" />
                 </div>
                 <div class="footer-info clearfix">
                     <h4 class="footer-text">
-                        &copy;<span class="dedicated">2024</span>
+                        &copy;<span id="date">2020</span>
                         <span class="company">batch & co</span> all rights
-                        reserved
+                        reserved.
                     </h4>
                     <h4 class="made-by">
                         website by
@@ -417,5 +452,6 @@ Serving Caravan Roasters Craft Coffee" />
                 </div>
             </div>
         </footer>
+        <script src="./js/app.js"></script>
     </body>
 </html>
