@@ -139,6 +139,12 @@ p {
         padding: 4rem 1rem;
     }
 }
+/*logo */
+.logo {
+    width: 120px;
+    margin: 0 auto 2rem;
+    background: transparent;
+}
 /* Header */
 .header {
     min-width: 400px;
@@ -218,6 +224,9 @@ p {
     }
 }
 @media screen and (min-width: 1170px) {
+    .logo {
+        width: 250px;
+    }
     .skill {
         float: left;
         width: 25%;
@@ -428,14 +437,23 @@ p {
     font-weight: normal;
     color: var(--clr-primary);
 }
+.map-btn {
+    text-transform: uppercase;
+    color: var(--clr-primary);
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+    display: block;
+}
 .contact-text {
     text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 address a {
     text-decoration: none;
     color: var(--clr-brown-1);
 }
 .contact-form {
+    margin-top: 1rem;
     background: var(--clr-white);
     border-radius: var(--radius);
     text-align: center;
@@ -485,5 +503,58 @@ address a {
     .contact-info {
         float: left;
         width: 50%;
+    }
+}
+
+/* footer */
+.footer {
+    background: black;
+    text-align: center;
+}
+
+.social-icon {
+    color: var(--clr-white);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: var(--transistion);
+}
+.social-icon:hover {
+    color: var(--clr-primary);
+}
+
+.footer-text {
+    margin-top: 1.25rem;
+    text-transform: uppercase;
+    color: var(--clr-white);
+    font-weight: 400;
+}
+
+.company {
+    color: var(--clr-primary);
+}
+
+.made-by {
+    color: white;
+    font-size: 0.5rem;
+}
+.maker a {
+    color: var(--clr-primary);
+    text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+    .footer-info {
+        padding: 1rem 0;
+    }
+    .footer-text {
+        margin-top: 1rem;
+        float: left;
+        width: 70%;
+        text-align: right;
+    }
+    .made-by {
+        margin-top: 1rem;
+        float: right;
+        width: 30%;
+        text-align: right;
     }
 }
